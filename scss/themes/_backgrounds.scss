@@ -1,0 +1,41 @@
+.rain {
+    background-color: $background-color;
+    background-image: url("../img/rain.jpg");
+    background-size: cover;
+}
+
+.snow {
+    background-color: $background-color;
+    background-image: url("../img/snow.jpg");
+    background-size: cover;
+}
+
+.night {
+    background-color: $night-color;
+    background-image: url("../img/night-cloudless.jpg");
+    background-size: cover;
+}
+
+.fog {
+    background-color: $fog-color;
+    background-image: url("../img/fog.jpg");
+    background-size: cover;
+}
+
+.partly-cloudy {
+    background-color: $background-color;
+    background-image: url("../img/partlycloudy.jpg");
+    background-size: cover;
+}
+
+.overcast {
+    background-color: $background-color;
+    background-image: url("../img/overcast.jpg");
+    background-size: cover;
+}
+
+.stormy {
+    background-color: $background-color;
+    background-image: url("../img/stormy.jpg");
+    background-size: cover;
+}

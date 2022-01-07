@@ -1,0 +1,135 @@
+.button {
+    // approx fingerprint size:
+    min-width: 48px;
+    min-height: 48px;
+    color: $button-textcolor;
+    border: 2px solid $border-color;
+    border-radius: 80px;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 900;
+    background-color: $button-color;
+    @include mq(768px) {
+        font-size: 1.5rem;
+        min-width: 64px;
+        min-height: 64px;
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 4px 2px 5px $text-shadow-color;
+    border-color: $font-color;
+}
+
+// °F/°C button
+// .degrees {
+//     font-size: .6em;
+//     padding: .5em;
+// }
+
+// **************************** TOGGLE ********************************
+// .toggle-degrees {
+//     height: 100vh;
+//     display: flex;
+//     display: grid;
+//     justify-content: center;
+//     align-items: center;
+//     margin: auto;
+//   }
+  
+//   .input-toggle {
+//     position: absolute;
+//     opacity: 0;
+    
+//     + label .degrees {
+//       outline: 2px solid transparent;
+//       transform: scale(1,1);
+//       transition:
+//         outline .25s ease,
+//         transform .15s ease;
+//     }
+    
+//     &:focus {
+//       + label .degrees {
+//         outline: 2px solid $toggle-border;
+//       }
+//     }
+    
+//     &:active {
+//       + label .degrees {
+//         transform: scale(1.05);
+//       }
+//     }
+//   }
+  
+//   label .degrees {  
+//     // Setting up some basic variables for the label
+//     $w: 10vw;
+//     $h: calc($w / 2);
+//     $br: calc($w / 1);
+//     position: relative;
+//     background: $toggle-color-light;
+//     display: block;
+//     width: $w;
+//     height: $h;
+//     border-radius: $br;
+//     box-shadow: 0px calc($w / 7.5) calc($w / 3.75) 0px rgba(51, 51, 51, 0.1);
+//     cursor: pointer;
+    
+//     text-indent: 200vw;
+//     overflow: hidden;
+    
+//     &::before,
+//     &::after {
+//       content: "";
+//       position: absolute;
+//     }
+    
+//     // Vars for pseudo elements
+//     $size: calc($w / 3);
+//     $offset: calc($w / 12);
+    
+//     &::before {
+//       width: $size;
+//       height: $size;
+//       border-radius: 50%;
+//       background: $toggle-color-dark;
+//       left: 0px;
+//       top: 50%;
+//       transform: translate($offset , -50%);
+//       box-shadow:
+//         calc($w - calc($offset * 2) - $size)
+//         0px
+//         0px
+//         $toggle-color-light;
+      
+//       z-index: 1;
+//     }
+    
+//     &::after {
+//       width: $size;
+//       height: $size;
+//       left: 0;
+//       top: 50%;
+//       background: $toggle-color-dark;
+//       transform: translate(-100%, -50%) scale(1);
+//       transform-origin: left;
+//       border-radius: 50%;
+//       transition:
+//         transform .35s ease;
+//     }
+    
+//   }
+  
+//   .input-toggle:checked {
+//     + label .degrees {
+//       &::after {
+//         transform: translate(-100%, -50%) scale(5);
+//       }
+//     }
+// }
